@@ -34,7 +34,7 @@ except ImportError:  # pragma: no cover
     pytesseract = None
 
 SUPPORTED_EXT = (".png", ".jpg", ".jpeg")
-PIPELINE_VERSION = "2"          # bump to invalidate caches when prompts/logic change
+PIPELINE_VERSION = "3"          # bump to invalidate caches when prompts/logic change
 
 
 class BillError(RuntimeError):

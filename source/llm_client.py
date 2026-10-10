@@ -162,7 +162,7 @@ class LLMClient:
             if t is not None:
                 body["temperature"] = t
         return ("https://api.openai.com/v1/chat/completions",
-                {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, body)
+                {"Authorization": "Bearer " + key, "Content-Type": "application/json"}, body)
 
     def _parse(self, data: dict[str, Any]) -> str:
         p = self.cfg.provider

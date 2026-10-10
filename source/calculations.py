@@ -173,6 +173,7 @@ def render_answer(answer: str, calcs: Any, env: dict[str, Any]) -> str:
         raise CalcError(f"unresolved placeholders {missing}")
     rendered = _PLACEHOLDER.sub(lambda m: values[m.group(1)], answer)
     rendered = re.sub(r"(?i)\bPKR\s+(?=PKR\s)", "", rendered)
+    rendered = re.sub(r"(?i)\bPKR\s+([\d,]+(?:\.\d+)?)\s+PKR\b", r"PKR \1", rendered)
     rendered = re.sub(r"%{2,}", "%", rendered)
     return rendered
 
