@@ -1,0 +1,32 @@
+{
+ "bills": {
+  "IESCO_0004": {
+   "level1": "ok",
+   "warnings": [
+    "re-check did not resolve: charge lines sum to 3037 but total_charges is 2770"
+   ],
+   "level2_fallbacks": 0
+  },
+  "KESC_0004": {
+   "level1": "ok",
+   "warnings": [],
+   "level2_fallbacks": 0
+  },
+  "KESC_0008": {
+   "level1": "ok",
+   "warnings": [],
+   "level2_fallbacks": 0
+  },
+  "LESCO_0005": {
+   "level1": "ok",
+   "warnings": [],
+   "level2_fallbacks": 0
+  },
+  "LESCO_0006": {
+   "level1": "ok",
+   "warnings": [],
+   "level2_fallbacks": 0
+  }
+ },
+ "model": "gemini-3.5-flash-lite"
+}
